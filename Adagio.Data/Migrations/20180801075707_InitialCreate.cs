@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AdagioApi.Migrations
+namespace Adagio.Data.Migrations
 {
     public partial class InitialCreate : Migration
     {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AdagioApi.Migrations
+namespace Adagio.Data.Migrations
 {
     public partial class AzureDb2 : Migration
     {

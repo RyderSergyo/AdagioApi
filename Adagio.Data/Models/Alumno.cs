@@ -1,14 +1,14 @@
-﻿using System;
+﻿using Adagio.Data.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AdagioApi.Models
+namespace Adagio.Data.Models
 {
-    public class Alumno
+    public class Alumno : EntityBase
     {
-        public int id { get; set; }
         [Required]
         [StringLength(50)]
         [Display(Name = "Nombre")]

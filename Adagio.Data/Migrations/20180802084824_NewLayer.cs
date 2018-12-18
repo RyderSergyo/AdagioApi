@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AdagioApi.Migrations
+namespace Adagio.Data.Migrations
 {
-    public partial class ConnectionStringFixed : Migration
+    public partial class NewLayer : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

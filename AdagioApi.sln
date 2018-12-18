@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdagioApi", "AdagioApi\AdagioApi.csproj", "{055EF282-0CC7-413A-8F7A-788420E8F4D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1-Adagio.Api", "AdagioApi\1-Adagio.Api.csproj", "{055EF282-0CC7-413A-8F7A-788420E8F4D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-Adagio.Data", "Adagio.Data\2-Adagio.Data.csproj", "{3472CA98-0FFF-4B89-AC30-42EE7C724CB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{055EF282-0CC7-413A-8F7A-788420E8F4D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{055EF282-0CC7-413A-8F7A-788420E8F4D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{055EF282-0CC7-413A-8F7A-788420E8F4D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3472CA98-0FFF-4B89-AC30-42EE7C724CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3472CA98-0FFF-4B89-AC30-42EE7C724CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3472CA98-0FFF-4B89-AC30-42EE7C724CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3472CA98-0FFF-4B89-AC30-42EE7C724CB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace AdagioApi.Migrations
+namespace Adagio.Data.Migrations
 {
-    public partial class AzureDb : Migration
+    public partial class ConnectionStringFixed : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

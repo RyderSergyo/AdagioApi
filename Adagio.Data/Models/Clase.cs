@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AdagioApi.Models
+namespace Adagio.Data.Models
 {
     public class Clase
     {
