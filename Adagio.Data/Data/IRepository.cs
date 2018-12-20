@@ -10,7 +10,7 @@ namespace Adagio.Data.Data
         IEnumerable<T> GetAll();
 
         T Get(int id);
-
+        Task<T> GetAsync(int id);
         void Add(T entity);
 
         void Update(T entity);

@@ -28,7 +28,7 @@ namespace Adagio.Api
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_1)
                 .AddJsonOptions(x => x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
                 .AddMvcOptions(x => x.Filters.Add(new ValidModelStateFilter()));
-            services.AddDbContext<AdagioContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<AdagioContext>(options => options.UseSqlServer(Configuration.GetConnectionString("AdagioDB")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

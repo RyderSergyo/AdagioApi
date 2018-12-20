@@ -26,12 +26,13 @@ namespace Adagio.Api.Controllers
         /// Devuelve una lista con todos los Alumnos
         /// </summary>
         /// <returns>ActionResult<IEnumerable<Alumno>></returns>
-        [HttpGet(Name = "GetAll")]
-        public async Task<ActionResult<IEnumerable<Alumno>>> GetAllAsync(string orden = null)
+        [HttpGet(Name = "GetAllAlumnos")]
+        public async Task<ActionResult<IEnumerable<Alumno>>> GetAllAsync(string orden = "nombre_asc")
         {
-            var listaAlumnos = AlumnoRepository.GetAll();
+            //var listaAlumnos = AlumnoRepository.GetAll();
+            var listaAlumnos = await AlumnoRepository.GetAlumnosConClasesAsync();
 
-            if (!String.IsNullOrWhiteSpace(orden))
+            if (!string.IsNullOrWhiteSpace(orden))
             {
                 switch (orden)
                 {
@@ -45,7 +46,7 @@ namespace Adagio.Api.Controllers
                         break;
                 }
             }
-            return listaAlumnos.ToList();
+            return listaAlumnos;
         }
 
         /// <summary>
@@ -53,7 +54,7 @@ namespace Adagio.Api.Controllers
         /// </summary>
         /// <param name="edad"></param>
         /// <returns></returns>
-        [HttpGet("{id}", Name = "GetById")]
+        [HttpGet("{id}", Name = "GetAlumnoById")]
         public async Task<ActionResult<Alumno>> GetAllMayores(int id)
         {
             return AlumnoRepository.Get(id) ?? null;

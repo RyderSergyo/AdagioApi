@@ -21,6 +21,11 @@ namespace Adagio.Data.Repositories
             return Context.Set<T>().FirstOrDefault(o => o.id == id);
         }
 
+        public async Task<T> GetAsync(int id)
+        {
+            return await Context.Set<T>().FirstOrDefaultAsync(o => o.id == id);
+        }
+
         public void Add(T entity)
         {
             Context.Set<T>().Add(entity);
